@@ -9,22 +9,14 @@ public class Basic {
     // Primitive Data types
     // (String is a class not a primitive data type)
 
-    byte byteType = 2;
-    // Range: -128 to 127
-    short shortType = 189;
-    // Range: -32768 to 32767
-    int intType = 18919;
-    // Range: -2147483648 to 2147483647
-    long longType = 69251973;
-    // Range: -9223372036854775808 to 9223372036854775807
-    float floatingType = 978.68f;
-    // Range: 1.4E-45 to 3.4E38
-    double doubleType = 1987.7629;
-    // Range: 4.9E-324 to 1.7E308
-    char charType = 'A';
-    // Range: \u0000 to \uFFFF
-    boolean booleanType = true;
-    // true or false
+    byte byteType = 2; // Range: -128 to 127
+    short shortType = 189; // Range: -32768 to 32767
+    int intType = 18919; // Range: -2147483648 to 2147483647
+    long longType = 69251973; // Range: -9223372036854775808 to 9223372036854775807
+    float floatingType = 978.68f; // Range: 1.4E-45 to 3.4E38
+    double doubleType = 1987.7629; // Range: 4.9E-324 to 1.7E308
+    char charType = 'A'; // Range: \u0000 to \uFFFF
+    boolean booleanType = true; // true or false
   }
 
   static void inputOutput() {
@@ -35,21 +27,22 @@ public class Basic {
     // 0 indicates index of the character.
     String str = sc.nextLine();
     String str2 = sc.next();
-    // String is a class. nextLine(), next() is a method of the class.
+    // String is a class. nextLine(), next() are methods of the class.
 
     // Output to the user
-    // Don't print next Line
-    System.out.print(intgerNum + " " + character + " " + str + " " + str2);
-    // prints next Line
-    System.out.println(intgerNum + " " + character + " " + str + " " + str2);
+    
+    System.out.print(intgerNum + " " + character + " " + str + " " + str2); // Doesn't print new line.
+    System.out.println(intgerNum + " " + character + " " + str + " " + str2); // prints new Line
+    
     // Prints the formatted output
+    // %d is for int, %c is for char, %s is for string, %f for double or float
     System.out.printf("%d %c %s %s", intgerNum, character, str, str2);
-    // %d is for int, %c is for char, %s is for string, %f for double or float.
     System.out.printf("%-10sRank: %02d","Anurag",17);
 
   }
 
   static void operators() {
+
     // Arithmetic operators
     int a = 10;
     int b = 20;
@@ -58,12 +51,14 @@ public class Basic {
     int mul = a * b;
     int div = a / b;
     int mod = a % b;
+
     // Increment and decrement operators
     int c = 10;
     c++; // first use then increment
     c--; // first use then decrement
     ++c; // first increment then use
     --c; // first decrement then use
+
     // Assignment operators
     int d = 10;
     d += 5; // same as d = d + 5
@@ -71,6 +66,7 @@ public class Basic {
     d *= 5;
     d /= 5;
     d %= 5;
+
     // Comparison operators
     int e = 10;
     int f = 20;
@@ -80,12 +76,14 @@ public class Basic {
     boolean isLess = e < f; // true
     boolean isGreaterEqual = e >= f; // false
     boolean isLessEqual = e <= f; // true
+
     // Logical operators
     boolean isTrue = true;
     boolean isFalse = false;
     boolean and = isTrue && isFalse;
     boolean or = isTrue || isFalse;
     boolean not = !isTrue;
+
     // Bitwise operators
     int g = 10;
     int h = 20;
@@ -95,12 +93,14 @@ public class Basic {
     int bitwiseNot = ~g; // -11
     int bitwiseLeftShift = g << 2; // 100
     int bitwiseRightShift = g >> 2; // 1
+
     // Ternary operator
     int i = 10;
     int j = 20;
     int max = (i > j) ? i : j; // 20
     String j2 = (i > j) ? "i is greater" : "j is greater";
   }
+  
   static void typeCasting() {
     
     // Type promotion
